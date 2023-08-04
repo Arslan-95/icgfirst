@@ -1,0 +1,51 @@
+@import '@/shared/breakpoints/index';
+
+.typography {
+  font-weight: 400;
+  font-style: normal;
+
+  &:global(.xl) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &:global(.lg) {
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  &:global(.md) {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  &:global(.sm) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &:global(.xs) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .typography {
+    font-weight: 400;
+    font-style: normal;
+
+    &:global(.xl) {
+      line-height: 30px;
+    }
+
+    &:global(.lg) {
+      line-height: 32px;
+    }
+
+    &:global(.xs) {
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+}

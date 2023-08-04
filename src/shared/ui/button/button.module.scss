@@ -1,0 +1,33 @@
+.button {
+  border-radius: 100px;
+  background: none;
+  border: none;
+  color: #fff;
+
+  cursor: pointer;
+
+  &:global(.small) {
+    font-size: 14px;
+    padding: 11px 10px;
+  }
+
+  &:global(.medium) {
+    font-size: 17px;
+    padding: 19px 20px 18px;
+  }
+
+  &:global(.large) {
+    font-size: 21px;
+    padding: 21px 30px 20px;
+  }
+
+  &:global(.white) {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+  }
+
+  &:global(.primary) {
+    background: linear-gradient(90deg, #273dff 0%, #ab33ff 100%);
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.2);
+  }
+}
