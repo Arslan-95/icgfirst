@@ -1,35 +1,26 @@
 import React from 'react';
 import CharacterCard from './character-card/character-card';
-import { Container, Typography } from '../shared';
+import { CardSection, Container } from '../shared';
+import MainContent from './main-content/main-content';
 import styles from './about-us.module.scss';
+import { OutlinedCard } from '../shared/card';
+import { ABOUT_US_CARDS } from './lib';
 
 const AboutUs = () => {
   return (
     <div className={styles.aboutUs}>
       <Container className={styles.aboutUs__container}>
         <div className={styles.aboutUs__content}>
-          <div>
-            <h2>Трансгран — команда международного уровня</h2>
-            <Typography size="lg" className={styles.aboutUs__subtitle}>
-              Помогаем российскому бизнесу легально проводить оплаты в условиях
-              глобальной изоляции
-            </Typography>
-            <ul>
-              <li>
-                <Typography size="md">
-                  Команда с финансовым, логистическим и управленческим опытом
-                </Typography>
-              </li>
-              <li>
-                <Typography size="md">
-                  Инициатор инновационных и технологических продуктов на рынке
-                  банковских услуг
-                </Typography>
-              </li>
-            </ul>
+          <MainContent />
+          <div className={styles.characterCardWrapper}>
+            <CharacterCard />
           </div>
-          <CharacterCard />
         </div>
+        <CardSection type="outlined">
+          {ABOUT_US_CARDS.map((card) => (
+            <OutlinedCard key={card.id} {...card} />
+          ))}
+        </CardSection>
       </Container>
     </div>
   );

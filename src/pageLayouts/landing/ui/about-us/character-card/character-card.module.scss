@@ -1,9 +1,10 @@
+@import '@/shared/breakpoints';
+
 .characterCard {
   background: rgba(135, 95, 163, 0.2);
   max-width: 600px;
   padding: 20px 0 40px;
   position: relative;
-  margin-left: auto;
 
   &__header {
     --outsidePadding: 38px;
@@ -36,6 +37,43 @@
 
     &__wrapper {
       padding: 0 22px;
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .characterCard {
+    padding: 24px 0 17px;
+
+    &__header {
+      --outsidePadding: 19px;
+      padding: 31px 12px 63px 15px;
+      margin-bottom: 17px;
+
+      img {
+        width: 114px;
+        height: 164px;
+        transform: none;
+        left: 28%;
+      }
+    }
+
+    & .title {
+      line-height: 23px;
+    }
+
+    & .subtitle {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .list {
+      font-size: 14px;
+      line-height: 22px;
+
+      &__wrapper {
+        padding: 0 15px 0 6px;
+      }
     }
   }
 }
