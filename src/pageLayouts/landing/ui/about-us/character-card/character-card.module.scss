@@ -1,0 +1,41 @@
+.characterCard {
+  background: rgba(135, 95, 163, 0.2);
+  max-width: 600px;
+  padding: 20px 0 40px;
+  position: relative;
+  margin-left: auto;
+
+  &__header {
+    --outsidePadding: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% + var(--outsidePadding) * 2);
+    padding: 55px 37px 54px 51px;
+    margin-bottom: 30px;
+    left: calc(0px - var(--outsidePadding));
+    position: relative;
+    background: linear-gradient(180deg, #4820c9 0%, #3d5a84 100%);
+
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .title {
+      line-height: 30px;
+    }
+  }
+
+  .list {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+
+    &__wrapper {
+      padding: 0 22px;
+    }
+  }
+}
