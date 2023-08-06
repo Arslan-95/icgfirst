@@ -1,0 +1,22 @@
+.aboutUs {
+  padding-top: 36px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    max-width: 572px;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    max-width: 525px;
+    margin-bottom: 42px;
+  }
+
+  ul {
+    max-width: 516px;
+  }
+}

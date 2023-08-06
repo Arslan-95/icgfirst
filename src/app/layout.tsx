@@ -1,6 +1,6 @@
 import './globals.scss';
 import { PropsWithChildren } from 'react';
-import { Template } from '@/widgets/template';
+import { Template } from '@/pageLayouts/landing';
 import type { Metadata } from 'next';
 import { AppProvider } from '@/shared/app-provider';
 
