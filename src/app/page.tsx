@@ -1,5 +1,5 @@
-import Screens from '@/widgets/screens';
+import { Landing } from '@/pageLayouts/landing';
 
 export default function Home() {
-  return <Screens />;
+  return <Landing />;
 }
