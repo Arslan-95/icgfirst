@@ -2,6 +2,7 @@
 
 .aboutUs {
   padding-top: 36px;
+  padding-bottom: 80px;
 
   &__content {
     display: flex;
@@ -13,6 +14,9 @@
 
 @media screen and (max-width: $md) {
   .aboutUs {
+    padding-top: 20px;
+    padding-bottom: 60px;
+
     &__content {
       flex-direction: column;
       gap: 36px;
