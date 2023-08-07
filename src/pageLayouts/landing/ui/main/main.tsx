@@ -19,7 +19,7 @@ const Main = () => {
               со всего мира за 1–2 дня
             </h1>
             <Typography
-              size={breakpoints.isUp('md') ? 'xl' : 'md'}
+              size={breakpoints.isDown('md') ? 'md' : 'xl'}
               className={styles.description}
             >
               Помогаем российскому бизнесу легально проводить оплаты в условиях

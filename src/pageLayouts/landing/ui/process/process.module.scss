@@ -1,0 +1,23 @@
+@import '@/shared/breakpoints';
+
+.process {
+  padding: 41.5px 0 66px;
+
+  h2 {
+    margin-bottom: 56px;
+  }
+
+  .steps {
+    max-width: 963px;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .process {
+    padding: 25.5px 0 38px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+}

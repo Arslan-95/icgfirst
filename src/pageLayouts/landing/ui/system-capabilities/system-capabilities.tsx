@@ -11,15 +11,15 @@ import { CAPABILITIES } from './lib';
 import { useAdaptive } from '@/shared/breakpoints';
 
 const SystemCapabilities = () => {
-  const { isUp } = useAdaptive();
-  const isUpThanMd = isUp('md');
+  const { isDown } = useAdaptive();
+  const isDownThanMd = isDown('md');
 
   return (
     <div className={styles.systemCapabilities}>
       <Container>
         <h2>Возможности для внешно-экономической деятельности</h2>
         <div className={styles.capabilities}>
-          <CollapsiblePanelSection gap={isUpThanMd ? '14px' : '12px'}>
+          <CollapsiblePanelSection gap={isDownThanMd ? '12px' : '14px'}>
             {CAPABILITIES.map((capability) => (
               <CollapsiblePanel key={capability.id} {...capability} />
             ))}

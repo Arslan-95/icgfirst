@@ -8,14 +8,14 @@ import Image from 'next/image';
 import { useAdaptive } from '@/shared/breakpoints';
 
 const CharacterCard = () => {
-  const { isUp } = useAdaptive();
-  const isUpThanMd = isUp('md');
+  const { isDown } = useAdaptive();
+  const isDownThanMd = isDown('md');
 
   return (
     <div className={styles.characterCard}>
       <div className={styles.characterCard__header}>
         <Typography
-          size={isUpThanMd ? 'xl' : 'md'}
+          size={isDownThanMd ? 'md' : 'xl'}
           component="h3"
           className={styles.title}
         >

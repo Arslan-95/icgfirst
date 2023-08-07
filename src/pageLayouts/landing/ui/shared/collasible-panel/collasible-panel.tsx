@@ -17,8 +17,8 @@ const CollasiblePanel = ({
   description,
 }: Omit<ICollapsiblePanel, 'id'>) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { isUp } = useAdaptive();
-  const isUpThanMd = isUp('md');
+  const { isDown } = useAdaptive();
+  const isDownThanMd = isDown('md');
 
   return (
     <div className={classnames(styles.collapsiblePanel, { isOpen })}>
@@ -26,7 +26,7 @@ const CollasiblePanel = ({
         className={styles.collapsiblePanel__panel}
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        <Typography size={isUpThanMd ? 'xl' : 'sm'} component="h4">
+        <Typography size={isDownThanMd ? 'sm' : 'xl'} component="h4">
           {title}
         </Typography>
         <span className={styles.collapsiblePanel__toggler}>
@@ -35,7 +35,9 @@ const CollasiblePanel = ({
       </div>
       {isOpen && (
         <div className={styles.collapsiblePanel__content}>
-          <Typography size={isUpThanMd ? 'lg' : 'xs'}>{description}</Typography>
+          <Typography size={isDownThanMd ? 'xs' : 'lg'}>
+            {description}
+          </Typography>
         </div>
       )}
     </div>
