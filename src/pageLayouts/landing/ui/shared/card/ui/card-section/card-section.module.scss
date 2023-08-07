@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  &:global(.outlined) > * {
+  &:global(.outlined) {
     gap: 33px;
 
     & > * {

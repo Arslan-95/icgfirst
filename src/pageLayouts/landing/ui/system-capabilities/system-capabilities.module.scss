@@ -1,0 +1,26 @@
+@import '@/shared/breakpoints';
+
+.systemCapabilities {
+  padding: 60px 0 45px;
+
+  h2 {
+    max-width: 981px;
+    margin-bottom: 42px;
+  }
+
+  .capabilities {
+    max-width: 963px;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .systemCapabilities {
+    padding: 50px 5px 28.5px;
+    
+    h2 {
+      padding: 0 5px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+  }
+}

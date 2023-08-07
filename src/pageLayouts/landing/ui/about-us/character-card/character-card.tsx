@@ -1,20 +1,30 @@
+'use client';
+
 import React from 'react';
 import { Typography } from '../../shared';
 import image from '../../shared/assets/poroshin-photo.png';
 import styles from './character-card.module.scss';
 import Image from 'next/image';
+import { useAdaptive } from '@/shared/breakpoints';
 
 const CharacterCard = () => {
+  const { isDown } = useAdaptive();
+  const isDownThanMd = isDown('md');
+
   return (
     <div className={styles.characterCard}>
       <div className={styles.characterCard__header}>
-        <Typography size="xl" component="h3" className={styles.title}>
+        <Typography
+          size={isDownThanMd ? 'md' : 'xl'}
+          component="h3"
+          className={styles.title}
+        >
           Алексей
           <br />
           Порошин
         </Typography>
         <Image src={image} alt="Алексей Порошин" />
-        <Typography size="xs">
+        <Typography size="xs" className={styles.subtitle}>
           Руководитель
           <br />
           АО «ПЕРВАЯ ГРУППА»

@@ -1,22 +1,30 @@
+@import '@/shared/breakpoints';
+
 .aboutUs {
   padding-top: 36px;
+  padding-bottom: 80px;
 
   &__content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
   }
+}
 
-  h2 {
-    max-width: 572px;
-    margin-bottom: 30px;
-  }
+@media screen and (max-width: $md) {
+  .aboutUs {
+    padding-top: 20px;
+    padding-bottom: 60px;
 
-  &__subtitle {
-    max-width: 525px;
-    margin-bottom: 42px;
-  }
+    &__content {
+      flex-direction: column;
+      gap: 36px;
+      margin-bottom: 63px;
+    }
 
-  ul {
-    max-width: 516px;
+    .characterCardWrapper {
+      padding: 0 30px;
+    }
   }
 }

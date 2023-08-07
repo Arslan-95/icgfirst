@@ -1,0 +1,102 @@
+@import '@/shared/breakpoints';
+
+.card {
+  position: relative;
+  padding: 45px 23px 20px 17px;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(30%, -40%);
+  }
+
+  & &__title {
+    margin-bottom: 17px;
+
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  & &__description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .outline {
+    &__top,
+    &__right,
+    &__left,
+    &__bottom {
+      position: absolute;
+    }
+
+    &__top,
+    &__bottom {
+      left: 1px;
+      height: 1px;
+      width: calc(100% - 1px);
+    }
+
+    &__left,
+    &__right {
+      top: 0;
+      height: 100%;
+      width: 1px;
+    }
+
+    &__top {
+      top: 0;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, #fff 90%);
+    }
+    &__right {
+      background: #fff;
+      right: 0;
+    }
+    &__left {
+      left: 0px;
+      background: linear-gradient(
+        0,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 80%
+      );
+    }
+    &__bottom {
+      bottom: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        #fff 100%
+      );
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .card {
+    padding: 35px 4px 18px 11px;
+
+    img {
+      transform: translate(30%, -50%);
+    }
+
+    & &__title {
+      margin-bottom: 11px;
+
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    & &__description {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .outline {
+      &__top {
+        top: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, #fff 100%);
+      }
+    }
+  }
+}
