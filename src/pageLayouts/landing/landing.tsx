@@ -6,6 +6,7 @@ import AboutUs from './ui/about-us/about-us';
 import OurPartners from './ui/our-partners/our-partners';
 import SystemCapabilities from './ui/system-capabilities/system-capabilities';
 import Process from './ui/process/process';
+import Portfolio from './ui/portfolio/portfolio';
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <OurPartners />
       <SystemCapabilities />
       <Process />
+      <Portfolio />
       <Benefits />
     </div>
   );
