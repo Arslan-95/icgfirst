@@ -1,0 +1,56 @@
+@import '@/shared/breakpoints';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 22px;
+    width: 100%;
+  }
+
+  .input {
+    width: calc(50% - 11px);
+  }
+
+  p.agreement {
+    margin: 29px 0 47px;
+    max-width: 85.6%;
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .form {
+    .inputs {
+      gap: 12px;
+      padding: 0 4px;
+      justify-content: center;
+    }
+
+    .input {
+      width: 100%;
+      max-width: 627px;
+    }
+
+    p.agreement {
+      max-width: 100%;
+      margin: 24px 0;
+
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+}
