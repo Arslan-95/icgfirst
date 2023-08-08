@@ -1,3 +1,11 @@
+@import '@/shared/breakpoints';
+
 .landing {
   padding-bottom: 36px;
+}
+
+@media screen and (max-width: $md) {
+  .landing {
+    padding-bottom: 17.5px;
+  }
 }

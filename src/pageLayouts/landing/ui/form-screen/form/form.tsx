@@ -1,10 +1,17 @@
+'use client';
+
 import React from 'react';
 import styles from './form.module.scss';
 import { Input, SubmitButton, Typography } from '../../shared';
 
 const Form = () => {
   return (
-    <form className={styles.form}>
+    <form
+      className={styles.form}
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <div className={styles.inputs}>
         <Input className={styles.input} placeholder="Ваше имя и фамилия" />
         <Input

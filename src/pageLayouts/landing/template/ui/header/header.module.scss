@@ -21,6 +21,12 @@
   &__link {
     cursor: pointer;
     text-transform: uppercase;
+    user-select: none;
+    transition: opacity 0.1s;
+
+    &:not(:active):hover {
+      opacity: 0.85;
+    }
   }
 }
 

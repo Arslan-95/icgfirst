@@ -1,6 +1,7 @@
 .iconButton {
   background: none;
   border: none;
+  transition: transform 0.2s;
   cursor: pointer;
 
   &:global(.large) {
@@ -15,5 +16,9 @@
       width: 42px;
       height: 38px;
     }
+  }
+
+  &:not(:active):hover {
+    transform: scale(1.05);
   }
 }
