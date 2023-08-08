@@ -1,0 +1,46 @@
+@import '@/shared/breakpoints';
+
+.services {
+  padding: 58.5px 0 36px;
+
+  h2 {
+    margin-bottom: 62px;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    width: 100%;
+  }
+
+  &__card {
+    display: flex;
+    max-width: calc(50% - 8px);
+
+    & > * {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .services {
+    padding: 36px 0 17.5px;
+
+    h2 {
+      padding: 0 7px;
+      margin-bottom: 43px;
+    }
+
+    &__cards {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__card {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+}
