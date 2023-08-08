@@ -17,6 +17,10 @@
   &__card {
     display: flex;
     max-width: calc(50% - 8px);
+
+    & > * {
+      width: 100%;
+    }
   }
 }
 

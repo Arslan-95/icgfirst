@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './landing.module.scss';
 import Main from './ui/main/main';
 import Features from './ui/features/features';
 import Benefits from './ui/benefits/benefits';
@@ -12,14 +13,14 @@ import Services from './ui/services/services';
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className={styles.landing}>
       <Main />
       <Features />
       <AboutUs />
       <OurPartners />
       <SystemCapabilities />
-      <Process />
       <Portfolio />
+      <Process />
       <Benefits />
       <FormScreen />
       <Services />
