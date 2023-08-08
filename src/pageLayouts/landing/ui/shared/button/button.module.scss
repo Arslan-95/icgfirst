@@ -1,3 +1,5 @@
+@import '@/shared/breakpoints';
+
 .button {
   border-radius: 100px;
   background: none;
@@ -18,7 +20,9 @@
 
   &:global(.large) {
     font-size: 21px;
+    line-height: 18px;
     padding: 21px 30px 20px;
+    text-transform: uppercase;
   }
 
   &:global(.white) {
@@ -29,5 +33,18 @@
   &:global(.primary) {
     background: linear-gradient(90deg, #273dff 0%, #ab33ff 100%);
     box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  &:global(.secondary) {
+    background: #875fa3;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (max-width: $md) {
+  .button {
+    &:global(.large) {
+      font-size: 17px;
+    }
   }
 }

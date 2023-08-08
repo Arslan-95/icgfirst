@@ -8,6 +8,7 @@ import SystemCapabilities from './ui/system-capabilities/system-capabilities';
 import Process from './ui/process/process';
 import Portfolio from './ui/portfolio/portfolio';
 import FormScreen from './ui/form-screen/form-screen';
+import Services from './ui/services/services';
 
 const LandingPage = () => {
   return (
@@ -21,6 +22,7 @@ const LandingPage = () => {
       <Portfolio />
       <Benefits />
       <FormScreen />
+      <Services />
     </div>
   );
 };
