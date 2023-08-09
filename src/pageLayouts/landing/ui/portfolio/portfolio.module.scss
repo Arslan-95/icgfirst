@@ -2,6 +2,8 @@
 
 .portfolio {
   padding: 45.5px 0 41.5px;
+  position: relative;
+  z-index: 1;
 
   h2 {
     margin-bottom: 80px;
@@ -16,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 58px;
   }
 }
 

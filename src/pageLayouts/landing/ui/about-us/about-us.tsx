@@ -1,15 +1,51 @@
 import React from 'react';
 import CharacterCard from './character-card/character-card';
-import { CardSection, Container } from '../shared';
+import { BackgroundFigure, CardSection, Container } from '../shared';
 import MainContent from './main-content/main-content';
 import styles from './about-us.module.scss';
 import { OutlinedCard } from '../shared/card';
 import { ABOUT_US_CARDS } from './lib';
 
+const backgrounds = (
+  <>
+    <BackgroundFigure
+      position={{
+        left: 5,
+        top: -70,
+      }}
+      size={546}
+      visibleAdaptive={{
+        from: 'md',
+      }}
+    />
+    <BackgroundFigure
+      position={{
+        right: 45,
+        bottom: 105,
+      }}
+      size={106.922}
+      visibleAdaptive={{
+        to: 'sm',
+      }}
+    />
+    <BackgroundFigure
+      position={{
+        right: -95,
+        bottom: 2,
+      }}
+      size={188.5}
+      visibleAdaptive={{
+        to: 'sm',
+      }}
+    />
+  </>
+);
+
 const AboutUs = () => {
   return (
-    <div className={styles.aboutUs}>
+    <div className={styles.aboutUs} id="about-us">
       <Container className={styles.aboutUs__container}>
+        {backgrounds}
         <div className={styles.aboutUs__content}>
           <MainContent />
           <div className={styles.characterCardWrapper}>

@@ -11,7 +11,7 @@ const Benefits = () => {
   const { isDown } = useAdaptive();
 
   return (
-    <div className={styles.benefits}>
+    <div className={styles.benefits} id="benefits">
       <Container className={styles.benefits__container}>
         <h2>Проверенная база торговых домов по всему миру. А ещё:</h2>
         <CardSection type="solid">

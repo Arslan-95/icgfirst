@@ -14,7 +14,7 @@ type ServiceCardProps = {
 const ServiceCard = ({ title, link, logo }: ServiceCardProps) => {
   return (
     <div className={styles.serviceCard}>
-      <Image src={logo} alt="" />
+      <Image src={logo} alt="service logo" />
       <Typography className={styles.serviceCard__title} component="h4">
         {title}
       </Typography>

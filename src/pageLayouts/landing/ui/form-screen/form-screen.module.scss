@@ -2,9 +2,15 @@
 
 .formScreen {
   padding: 66px 0 58.5px;
+  position: relative;
+  z-index: 1;
 
   h2 {
     margin-bottom: 52px;
+  }
+
+  &__container {
+    position: relative;
   }
 }
 

@@ -11,3 +11,4 @@ export {
   type ICollapsiblePanel,
 } from './collasible-panel';
 export { default as Input } from './input/input';
+export { default as BackgroundFigure } from './background-figure/background-figure';

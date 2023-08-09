@@ -3,12 +3,19 @@
 .aboutUs {
   padding-top: 36px;
   padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+
+  &__container {
+    position: relative;
+  }
 
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 90px;
+    position: relative;
   }
 }
 

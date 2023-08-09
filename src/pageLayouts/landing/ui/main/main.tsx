@@ -4,6 +4,7 @@ import React from 'react';
 import styles from './main.module.scss';
 import { Button, Container, Typography } from '../shared';
 import { useAdaptive } from '@/shared/breakpoints';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Main = () => {
   const breakpoints = useAdaptive();
@@ -25,9 +26,16 @@ const Main = () => {
               Помогаем российскому бизнесу легально проводить оплаты в условиях
               глобальной изоляции
             </Typography>
-            <Button size="medium" variant="primary" className={styles.button}>
-              подробнее о нас
-            </Button>
+            <ScrollLink
+              className={styles.button}
+              duration={500}
+              to="about-us"
+              smooth
+            >
+              <Button size="medium" variant="primary" className={styles.button}>
+                подробнее о нас
+              </Button>
+            </ScrollLink>
           </div>
         </Container>
       </div>

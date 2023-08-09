@@ -2,6 +2,8 @@
 
 .systemCapabilities {
   padding: 60px 0 45px;
+  position: relative;
+  z-index: 1;
 
   h2 {
     max-width: 981px;
@@ -11,15 +13,31 @@
   .capabilities {
     max-width: 963px;
   }
+
+  &__container {
+    position: relative;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  .creditCardBg {
+    position: absolute;
+    right: -18px;
+    top: 456px;
+  }
 }
 
 @media screen and (max-width: $md) {
   .systemCapabilities {
     padding: 50px 5px 28.5px;
-    
+
     h2 {
       padding: 0 5px;
       margin-bottom: 24px;
     }
   }
 }
+
+//58

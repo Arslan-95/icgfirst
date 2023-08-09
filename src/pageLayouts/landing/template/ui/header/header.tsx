@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import styles from './header.module.scss';
 import {
   Container,
@@ -9,29 +9,38 @@ import {
   WhatsappButton,
 } from '../../../ui/shared';
 import Menu from './menu';
+import { Link as ReactScrollLink } from 'react-scroll';
 import { useAdaptive } from '@/shared/breakpoints';
 
+const ScrollLink = ({ to, children }: PropsWithChildren<{ to: string }>) => (
+  <ReactScrollLink to={to} duration={500} smooth className={styles.nav__link}>
+    {children}
+  </ReactScrollLink>
+);
+
 const Header = () => {
-  const { isDown } = useAdaptive();
+  const { isUp } = useAdaptive();
 
   const renderDesktop = () => (
     <Container className={styles.container}>
       <nav className={styles.nav}>
         <ul className={styles.nav__list}>
           <li className={styles.nav__item}>
-            <a className={styles.nav__link}>О нас</a>
+            <ScrollLink to="about-us">О нас</ScrollLink>
           </li>
           <li>
-            <a className={styles.nav__link}>Возможности системы</a>
+            <ScrollLink to="system-capabilities">
+              Возможности системы
+            </ScrollLink>
           </li>
           <li>
-            <a className={styles.nav__link}>Кейсы</a>
+            <ScrollLink to="portfolio">Кейсы</ScrollLink>
           </li>
           <li>
-            <a className={styles.nav__link}>Процесс</a>
+            <ScrollLink to="process">Процесс</ScrollLink>
           </li>
           <li>
-            <a className={styles.nav__link}>Преимущества</a>
+            <ScrollLink to="benefits">Преимущества</ScrollLink>
           </li>
         </ul>
       </nav>
@@ -59,9 +68,7 @@ const Header = () => {
   );
 
   return (
-    <header className={styles.header}>
-      {isDown('md') ? renderAdaptive() : renderDesktop()}
-    </header>
+    <header className={styles.header}>{isUp('sm') && renderDesktop()}</header>
   );
 };
 
