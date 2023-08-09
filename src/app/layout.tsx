@@ -5,8 +5,9 @@ import type { Metadata } from 'next';
 import { AppProvider } from '@/shared/app-provider';
 
 export const metadata: Metadata = {
-  title: 'Transgran',
-  description: 'landing',
+  title: 'Лендинг ICG-First',
+  description:
+    'Помогаем российскому бизнесу легально проводить оплаты в условиях глобальной изоляции',
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
