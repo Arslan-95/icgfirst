@@ -19,8 +19,8 @@ const Footer = () => {
         <div className={styles.footer__container}>
           <div className={styles.footer__contacts}>
             <div className={styles.footer__contacts__item}>
-              <a href="tel:+90 534 926 3782" className={styles.footer__contact}>
-                +90 534 926 3782
+              <a href="tel:+99 999 999 9999" className={styles.footer__contact}>
+                +99 999 999 9999
               </a>
               <span className={styles.footer__workTime}>
                 ПН-ПТ 9:00 - 18:00
