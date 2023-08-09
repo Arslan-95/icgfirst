@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from './system-capabilities.module.scss';
 import {
+  BackgroundFigure,
   CollapsiblePanel,
   CollapsiblePanelSection,
   Container,
@@ -19,6 +20,36 @@ const SystemCapabilities = () => {
   return (
     <div className={styles.systemCapabilities}>
       <Container className={styles.systemCapabilities__container}>
+        <BackgroundFigure
+          size={387}
+          position={{
+            top: -90,
+            right: 321,
+          }}
+          visibleAdaptive={{
+            from: 'md',
+          }}
+        />
+        <BackgroundFigure
+          size={546}
+          position={{
+            top: -30,
+            right: -41,
+          }}
+          visibleAdaptive={{
+            from: 'md',
+          }}
+        />
+        <BackgroundFigure
+          size={546}
+          position={{
+            top: 535,
+            left: -243,
+          }}
+          visibleAdaptive={{
+            from: 'md',
+          }}
+        />
         {!isDownThanMd && (
           <Image
             className={styles.creditCardBg}

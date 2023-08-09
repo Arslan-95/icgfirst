@@ -2,13 +2,23 @@
 
 .process {
   padding: 41.5px 0 77.5px;
+  position: relative;
+  z-index: 1;
 
   h2 {
-    margin-bottom: 63px;
+    margin-bottom: 56px;
   }
 
   .steps {
     max-width: 963px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__content {
+    position: relative;
   }
 }
 

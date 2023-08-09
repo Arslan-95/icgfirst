@@ -29,3 +29,14 @@
     border-radius: 10px;
   }
 }
+
+@media screen and (max-width: $md) {
+  .card {
+    padding: 11px 6px 18px;
+    min-height: 253px;
+
+    img {
+      max-width: 56px;
+    }
+  }
+}

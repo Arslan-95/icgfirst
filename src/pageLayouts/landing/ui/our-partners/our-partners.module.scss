@@ -2,10 +2,11 @@
 
 .ourPartners {
   --line-color: rgba(31, 57, 94, 0.15);
-
   background: rgba(255, 255, 255, 0.98);
   color: #000;
   padding: 41px 0 60px;
+  position: relative;
+  z-index: 2;
 
   h2 {
     margin-bottom: 46px;

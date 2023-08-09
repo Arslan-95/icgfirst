@@ -2,6 +2,8 @@
 
 .systemCapabilities {
   padding: 60px 0 45px;
+  position: relative;
+  z-index: 1;
 
   h2 {
     max-width: 981px;
@@ -23,7 +25,7 @@
   .creditCardBg {
     position: absolute;
     right: -18px;
-    bottom: 45px;
+    top: 456px;
   }
 }
 
