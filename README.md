@@ -1,4 +1,5 @@
-Link: [https://icgfirst.vercel.app/](https://icgfirst.vercel.app/)
+## Deploy link
+[https://icgfirst.vercel.app/](https://icgfirst.vercel.app/)
 
 ## Getting Started
 
