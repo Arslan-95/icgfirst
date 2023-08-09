@@ -5,13 +5,15 @@ import styles from './form.module.scss';
 import { Input, SubmitButton, Typography } from '../../shared';
 
 const Form = () => {
+  const submit = () => {};
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    submit();
+  };
+
   return (
-    <form
-      className={styles.form}
-      onSubmit={(e) => {
-        e.preventDefault();
-      }}
-    >
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.inputs}>
         <Input className={styles.input} placeholder="Ваше имя и фамилия" />
         <Input
@@ -27,7 +29,7 @@ const Form = () => {
         персональных данных, а также даю Согласие на рассылку электронных
         сообщений
       </Typography>
-      <SubmitButton />
+      <SubmitButton onClick={submit} />
     </form>
   );
 };

@@ -5,7 +5,7 @@ import Form from './form/form';
 
 const FormScreen = () => {
   return (
-    <div className={styles.formScreen}>
+    <div className={styles.formScreen} id="form-screen">
       <Container className={styles.formScreen__container}>
         <BackgroundFigure
           size={387}

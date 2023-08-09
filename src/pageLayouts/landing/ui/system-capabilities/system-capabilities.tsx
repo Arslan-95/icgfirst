@@ -18,7 +18,7 @@ const SystemCapabilities = () => {
   const isDownThanMd = isDown('md');
 
   return (
-    <div className={styles.systemCapabilities}>
+    <div className={styles.systemCapabilities} id="system-capabilities">
       <Container className={styles.systemCapabilities__container}>
         <BackgroundFigure
           size={387}

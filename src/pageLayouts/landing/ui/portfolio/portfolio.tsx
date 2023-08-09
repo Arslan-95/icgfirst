@@ -5,7 +5,7 @@ import { Container, SubmitButton } from '../shared';
 
 const Portfolio = () => {
   return (
-    <div className={styles.portfolio}>
+    <div className={styles.portfolio} id="portfolio">
       <Container>
         <h2>Сотрудничаем с крупными компаниями</h2>
         <div className={styles.orderCards}>

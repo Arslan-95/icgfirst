@@ -16,7 +16,7 @@ const Process = () => {
   const isDownThanMd = isDown('md');
 
   return (
-    <div className={styles.process}>
+    <div className={styles.process} id="process">
       <Container className={styles.process__container}>
         <BackgroundFigure
           size={546}
